@@ -7,7 +7,7 @@ if ! [ -f ${ZIP_FILENAME} ]; then
   mkdir -p data
   curl -o ${ZIP_FILENAME} "http://images.cocodataset.org/zips/val2017.zip"
 fi
-if ! [ -f ${UNZIP_DIR} ]; then
+if ! [ -d ${UNZIP_DIR} ]; then
   unzip ${ZIP_FILENAME}
   mv val2017 ${UNZIP_DIR}
 fi
