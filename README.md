@@ -1,3 +1,5 @@
+## Description
+
 Given a segmentation model, [Universal Adversarial Perturbations Against Semantic Image
 Segmentation](https://arxiv.org/abs/1704.05712) by Metzen et al. describes how
 to find a universal perturbation such that adding this perturbation to any image
@@ -6,3 +8,17 @@ pedestrians.
 
 This repo reproduces this result on a subset of the Coco 2017 data set on a
 smaller segmentation model.
+
+## Running
+
+This repo is tested on MacOS.
+
+The repo uses Conda for package management. Run
+```sh
+conda env create -f environment.yml && conda activate adversarial-segmentation
+```
+to set up the Conda environment, then run
+```sh
+jupyter lab
+```
+to launch JupyterLab.
