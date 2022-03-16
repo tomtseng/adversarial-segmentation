@@ -1,6 +1,7 @@
 name: adversarial-segmentation
 channels:
   - defaults
+  - conda-forge
 dependencies:
   - jupyterlab
   - python=3.8
