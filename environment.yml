@@ -12,4 +12,5 @@ dependencies:
   - numpy
   - einops
   - tqdm
+  - ipywidgets
 prefix: /Users/t/installs/anaconda3/envs/adversarial-segmentation
