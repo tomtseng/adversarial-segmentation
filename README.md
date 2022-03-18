@@ -31,7 +31,7 @@ table th:nth-of-type(4) {
 }
 </style>
 
-| | Original image | Static target segmentation | People hidden |
+| | Original image | Static target | People hidden |
 |-|:-:|:-:|:-:|
 | __Image__ | ![Sample image](/readme-files/sample-image.png) | ![Image with perturbation applied to match a static target segmentation](/readme-files/static-target.png) | ![Image with perturbation applied to hide people](/readme-files/hide-people.png) | 
 | __Segmentation__ | ![Segmentation of sample image](/readme-files/sample-image-segmentation.png) | ![Segmentation of image with perturbation applied to match a static target segmentation](/readme-files/static-target-segmentation.png) | ![Segmentation of image with perturbation applied to hide people](/readme-files/hide-people-segmentation.png) |
