@@ -15,6 +15,22 @@ output a particular static segmentation displaying the word "foo." The right
 column applies a perturbation that is trained to cause the model to not segment
 any people. 
 
+<!-- make the widths of table columns 2 to 4 be equal so that image sizes match -->
+<style>
+table th:first-of-type {
+    width: 19%;
+}
+table th:nth-of-type(2) {
+    width: 27%;
+}
+table th:nth-of-type(3) {
+    width: 27%;
+}
+table th:nth-of-type(4) {
+    width: 27%;
+}
+</style>
+
 | | Original image | Static target segmentation | People hidden |
 |-|:-:|:-:|:-:|
 | __Image__ | ![Sample image](/readme-files/sample-image.png) | ![Image with perturbation applied to match a static target segmentation](/readme-files/static-target.png) | ![Image with perturbation applied to hide people](/readme-files/hide-people.png) | 
