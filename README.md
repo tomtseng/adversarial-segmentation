@@ -7,12 +7,12 @@ in the Cityscapes data set tends to make the model output a desired target
 segmentation.
 
 This repo attempts to reproduce this result on a subset of the COCO 2017 data set on a
-smaller segmentation model.
+small segmentation model.
 
 In the table below, the first column shows a sample image and its segmentation.
 The middle column applies a perturbation that is trained to cause the model to
-not detect any people. The right column applies a perturbation that is trained
-the cause the model to output a particular static segmentation that displays the
+not segment any people. The right column applies a perturbation that is trained
+to cause the model to output a particular static segmentation that displays the
 word "foo."
 
 | | Original image | People hidden | Static target segmentation |
@@ -23,9 +23,11 @@ word "foo."
 | __Perturbation amplified 12.75x__| | ![Perturbation to hide people, amplified](/readme-files/hide-people-perturbation-amplified.png) | ![Perturbation to match a static target segmentation, amplified](/readme-files/static-target-perturbation-amplified.png)
 
 In the middle column, the perturbation was not as successful as desired---ideally the
-segmentation would still detect the bicycle while not detecting the person. I
-would guess that this can be improved by fiddling with the loss function or data
-set more.
+segmentation would still segment the bicycle while not segmenting the person.
+There weren't many recognized objects in the training data, so the perturbation
+can achieve good loss by making the model fail to segment anything rather than
+making the model only fail to segment people. This can probably be improved by
+fiddling with the loss function or data set more.
 
 ## Running
 
